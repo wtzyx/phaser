@@ -28,6 +28,7 @@ export default class GameScene extends Phaser.Scene {
     }
 
     create() {
+        this.gameOver = false
         this.add.image(640, 360, "sky");
     
         this.boostPowerUp = this.add.image(80, 624, "boost").setScale(2).setInteractive();
